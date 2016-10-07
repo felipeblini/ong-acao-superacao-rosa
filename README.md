@@ -1,8 +1,8 @@
-#Yeoman Express Grunt/Sass/MVC/MongoDb Generator - grunt-wired ready
+#Yeoman Express MVC/Handlebars/Grunt/Sass/MVC/MongoDb Generator - grunt-wired ready
 
 This is the same yeoman *Generator-Express MVC*.
 
-I've just added the task `grunt-wiredep` to inject all dependencies installed via Bower
+I've just added the task `grunt-wiredep` and `grunt-string-replace` to inject all dependencies installed via Bower
 
 To see it working run `gulp watch` or just `gulp` and in another console install any package like `bower install lato --save`.
 
