@@ -1,6 +1,6 @@
 #Yeoman Express MVC/Handlebars/Grunt/Sass/MVC/MongoDb Generator - grunt-wired ready
 
-This is the same yeoman **Generator-Express MVC**.
+This is the same **Yeoman Generator-Express MVC**.
 
 I've just added the task `grunt-wiredep` and `grunt-string-replace` to inject all dependencies installed via Bower
 
