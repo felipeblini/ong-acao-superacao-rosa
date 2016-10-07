@@ -57,12 +57,32 @@ module.exports = function (grunt) {
         files: [
           'bower.json'
         ],
-        tasks: ['wiredep']
+        tasks: ['wiredep', 'string-replace:bower']
       },
     },
     wiredep: {
       main: {
         src: ['app/views/layouts/main.handlebars']
+      }
+    },
+    'string-replace': {
+      bower: {
+        files: [{
+          expand: true,
+          cwd: 'app/views/layouts/',
+          src: '**/*.handlebars',
+          dest: 'app/views/layouts/'
+        }],
+        options: {
+          replacements: [{
+            pattern: /<script src=\"..\/..\/..\/public/g,
+            replacement: '<script src=\"'
+          },
+          {
+            pattern: /<link rel="stylesheet" href=\"..\/..\/..\/public/g,
+            replacement: '<link rel="stylesheet" href=\"'
+          }]
+        }
       }
     }
   });
