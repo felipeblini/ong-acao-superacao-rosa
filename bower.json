@@ -6,5 +6,7 @@
     "node_modules",
     "components"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
 }
